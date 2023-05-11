@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'poppins',sans-serif;
+  background-color: #FDF5D0;
+}
+
+.all {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+/* Header area */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+header > img {
+  cursor: pointer;
+}
+
+nav {
+  margin: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 6em;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  font-size: 2rem;
+}
+
+nav ul li a:hover {
+  color: #D34E4E;
+}
+
+header .login-btn {
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 0.8em;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: #F4CE14;
+}
+
+header .login-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Hero area */
+
+.hero-area {
+  display: flex;
+  gap: 4.2em;
+  margin-top: 10em;
+}
+
+.left-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-col {
+  flex-grow: 1;
+}
+
+.left-col h1 {
+  font-size: 7.2rem;
+  font-weight: bold;
+  font-family: 'Playfair Display',sans-serif;
+  color: #454545;
+  margin: 0;
+}
+
+.left-col .headline {
+  font-size: 2rem;
+  margin-top: 1.5em;
+}
+
+.left-col .headline span {
+  color: #ED0707;
+}
+
+.left-col .btn {
+  display: inline-block;
+  margin-top: 2em;
+  background-color: #F4CE14;
+  border: none;
+  text-align: center;
+  width: 28%;
+  font-size: 2rem;
+  padding: 0.5em 1em;
+  border-radius: 0.8em;
+}
+
+.left-col .btn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.left-col .btn:hover {
+  transform: scale(1.1);
+  
+}
+
+.feedback {
+  display: flex;
+  margin-top: 4em;
+  gap: 3em;
+}
+
+.feedback p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feedback i {
+  font-size: 2rem;
+  background-color: #D34E4E;
+  border-radius: 50%;
+  padding: 0.5em;
+  
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.right-col {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2em;
+  grid-template-areas: 
+  "card1 card2"
+  "card1 card3";
+}
+
+.card {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 2em;
+}
+
+.card1 {
+  grid-area: card1;
+  width: 28em;
+  height: 60em;
+  background-image: url('../img/Hero/pizza.jpg');
+}
+
+.card2 {
+  grid-area: card2;
+  width: 28em;
+  background-image: url('../img/Hero/burger.jpg');
+}
+
+.card3 {
+  grid-area: card3;
+  width: 28em;
+  background-image: url('../img/Hero/lemon.jpg');
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: none;
+  border-radius: 2em;
+  width: 25em;
+  height: 8em;
+  margin-bottom: 1.5em;
+  justify-content: center;
+  padding: 1em;
+}
+
+
+
+.card-details h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.card-details p {
+  font-size: 1.6rem;
+}
+
+/* food area */
+
+.food-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-area .headline {
+  margin-top: 14em;
+  text-align: center;
+}
+
+.food-area h2 {
+  font-size: 6rem;
+  font-weight: 500;
+  font-family: 'fasthand',sans-serif;
+}
+
+.food-area h1 {
+  font-size: 6.5rem;
+  color: #D34E4E;
+}
+
+.food-area h1 span {
+  color: #454545;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin: 4em auto;
+  gap: 4.6em;
+}
+
+.food {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  border-radius: 3em;
+}
+
+.food1 {
+  background-image: url('../img/Food/pizza1.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food2 {
+  background-image: url('../img/Food/pizza2.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food3 {
+  background-image: url('../img/Food/pizza3.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food4 {
+  background-image: url('../img/Food/burger1.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food5 {
+  background-image: url('../img/Food/burger2.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food6 {
+  background-image: url('../img/Food/burger3.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food7 {
+  background-image: url('../img/Food/lemon1.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food8 {
+  background-image: url('../img/Food/lemon2.jpg');
+  width: 37em;
+  height: 35em;
+}
+.food9 {
+  background-image: url('../img/Food/lemon3.jpg');
+  width: 37em;
+  height: 35em;
+}
+
+.food-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color: #fff;
+  width: 30em;
+  height: 7.3em;
+  border-radius: 2.5em;
+  margin-bottom: 1.4em;
+}
+
+.food-name h3 {
+  font-size: 2.5rem;
+}
+
+.food-name i {
+  font-size: 3rem;
+}
+
+.food-name:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Our Service area */
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15em;
+  max-width: 1216px;
+  height: 600px;
+  background-color: #D8CD9B;
+  border-radius: 2em;
+}
+
+.service .headline{
+  text-align: center;
+}
+
+.service .headline h1{
+  font-size: 6.6rem;
+}
+
+.service .headline p {
+  font-size: 2rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 7.7em;
+  gap: 7.5em;
+  width: 1167px;
+  height: 273px;
+}
+
+.list h4 {
+  font-size: 3.2rem;
+}
+
+.list p {
+  font-size: 1.8rem;
+}
+
+/* Hr tag */
+.newhr {
+  border: 7px solid #817B7B;
+  margin-top: 17.5em;
+}
+
+/* Footer area */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 5em;
+  margin-top: 2.6em;
+}
+
+.footer h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  gap: 1em;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  gap: 1em;
+}
+
+.footer-services {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
